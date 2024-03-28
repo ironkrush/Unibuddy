@@ -2,7 +2,7 @@ import React from 'react';
 import SubjectCard from '../components/SubjectCard';
 
 function SecondYear() {
-  // Sample subject data for first year
+
   const subjects = [
     {
       subjectName: 'Mathematics',

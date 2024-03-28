@@ -13,7 +13,7 @@ function App() {
     <>
     <Header />
     <Router>
-      <Routes> {/* Wrap routes with <Routes> */}
+      <Routes> 
         <Route path="/" element={<Home />} />
         <Route path="/first-year" element={<FirstYear />} />
         <Route path="/second-year" element={<SecondYear />} />
@@ -21,7 +21,6 @@ function App() {
         <Route path="/fourth-year" element={<FourthYear />} />
       </Routes>
     </Router>
-  );
      <Footer />
      </>
   );
