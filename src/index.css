@@ -1,13 +1,41 @@
-:root {  
+:root {
   --green: rgb(42, 252, 152);
   --blue: rgb(41, 121, 255);
+  --color-bg1: rgb(108, 0, 162);
+  --color-bg2: rgb(0, 17, 82);
+  --color1: 18, 113, 255;
+  --color2: 221, 74, 255;
+  --color3: 100, 220, 255;
+  --color4: 200, 50, 50;
+  --color5: 180, 180, 50;
+  --color-interactive: 140, 100, 255;
+  --circle-size: 80%;
+  --blending: hard-light;
+  --pink: #eb7ad1;
+  --orange: #fcab1c;
 }
+
 body {
-  height: 100%;
+  height: 200vh;
+  
+  color: black;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+.home {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  z-index: 100;
+}
+
+.text {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .line {
@@ -28,8 +56,8 @@ a {
   text-decoration: none;
 }
 
-#text:has(.fancy:hover) .word:not(.fancy:hover) {
-  opacity: 1;
+.text:has(.fancy:hover) .word:not(.fancy:hover) {
+  opacity: 0.38;
 }
 
 .fancy span {
@@ -48,15 +76,11 @@ a {
   animation: float 5s ease infinite;
 }
 
+
 .fancy:hover>.outer>.inner>.letter {
-  background: linear-gradient(to right,
-      var(--blue),
-      var(--green),
-      var(--blue));
-  background-size: 1000%;
-  background-clip: text;
+  background: linear-gradient(to right,#2af598, #22e4ac, #1bd7bb, #14c9cb, #0fbed8, #08b3e5);
   -webkit-text-fill-color: transparent;
-  animation: background-pan 150s linear infinite;
+  -webkit-background-clip: text;
 }
 
 .fancy:hover>.outer:nth-child(1) {
@@ -105,4 +129,159 @@ a {
 
 .fancy:hover>.outer:nth-child(12) {
   transform: translate(120%, -30%) rotate(-10deg);
+}
+.fancy:hover>.outer:nth-child(13) {
+  transform: translate(230%, -60%) rotate(-15deg);
+}
+
+
+.gradient-bg {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.gradient-bg svg {
+  display: none;
+}
+
+.gradients-container {
+  filter: url(#goo) blur(40px);
+  width: 100%;
+  height: 100%;
+}
+
+.g1,
+.g2,
+.g3,
+.g4,
+.g5,
+.interactive {
+  position: absolute;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  mix-blend-mode: var(--blending);
+  border-radius: 50%;
+}
+
+.g1 {
+  top: calc(50% - var(--circle-size) / 2);
+  left: calc(50% - var(--circle-size) / 2);
+  transform-origin: center center;
+  animation: moveVertical 30s ease infinite;
+  opacity: 1;
+  background: radial-gradient(circle at center, rgba(var(--color1), 0.8) 0, rgba(var(--color1), 0) 50%) no-repeat;
+}
+
+.g2 {
+  top: calc(50% - var(--circle-size) / 2);
+  left: calc(50% - var(--circle-size) / 2);
+  transform-origin: calc(50% - 400px);
+  animation: moveInCircle 20s reverse infinite;
+  opacity: 1;
+  background: radial-gradient(circle at center, rgba(var(--color2), 0.8) 0, rgba(var(--color2), 0) 50%) no-repeat;
+}
+
+.g3 {
+  top: calc(50% - var(--circle-size) / 2 + 200px);
+  left: calc(50% - var(--circle-size) / 2 - 500px);
+  transform-origin: calc(50% + 400px);
+  animation: moveInCircle 40s linear infinite;
+  opacity: 1;
+  background: radial-gradient(circle at center, rgba(var(--color3), 0.8) 0, rgba(var(--color3), 0) 50%) no-repeat;
+
+}
+
+.g4 {
+  top: calc(50% - var(--circle-size) / 2);
+  left: calc(50% - var(--circle-size) / 2);
+  transform-origin: calc(50% - 200px);
+  animation: moveHorizontal 40s ease infinite;
+  opacity: 0.7;
+  background: radial-gradient(circle at center, rgba(var(--color4), 0.8) 0, rgba(var(--color4), 0) 50%) no-repeat;
+
+}
+
+.g5 {
+  width: calc(var(--circle-size) * 2);
+  height: calc(var(--circle-size) * 2);
+  top: calc(50% - var(--circle-size));
+  left: calc(50% - var(--circle-size));
+  transform-origin: calc(50% - 800px) calc(50% + 200px);
+  animation: moveInCircle 20s ease infinite;
+  opacity: 1;
+  background: radial-gradient(circle at center, rgba(var(--color5), 0.8) 0, rgba(var(--color5), 0) 50%) no-repeat;
+}
+
+.interactive {
+  width: 100%;
+  height: 100%;
+  top: -50%;
+  left: -50%;
+  opacity: 0.7;
+  background: radial-gradient(circle at center, rgba(var(--color-interactive), 0.8) 0, rgba(var(--color-interactive), 0) 50%) no-repeat;
+}
+
+@keyframes moveInCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveVertical {
+  0% {
+    transform: translateY(-50%);
+  }
+
+  50% {
+    transform: translateY(50%);
+  }
+
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes moveHorizontal {
+  0% {
+    transform: translateX(-50%) translateY(-10%);
+  }
+
+  50% {
+    transform: translateX(50%) translateY(10%);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(-10%);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-10%);
+  }
+
+  50% {
+    transform: translateY(10%);
+  }
+
+  100% {
+    transform: translateY(-10%);
+  }
+}
+.content{
+  height: 50vh;
 }
