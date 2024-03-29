@@ -1,16 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Heading from '../components/Heading';
 
 
 function Home() {
+  const sentence = "A gift from Asynchroners!!".split("");
   return (
     <>
       <div className="home">
+        <div className='heading'>
+        {sentence.map((letter, index) =>{
+          return(
+            <Heading key={index}>
+              {letter === " " ? "\u00A0" : letter}
+            </Heading>
+          )
+        })}
 
+        </div>
         <div className="content">
-          <h2>Welcome to the University Website</h2>
-          <p>This is the home page of our university website. You can navigate to different year pages to access previous year questions.</p>
-          <p>Please select a year to continue:</p>
           <ul>
             <li>
               <Link to="/first-year">First Year</Link>

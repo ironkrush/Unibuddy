@@ -21,7 +21,7 @@ function FourthYear() {
     <div className="second-year">
     
       <div className="content">
-        <h2>Second Year Subjects</h2>
+        <h2>Fourth Year Subjects</h2>
         <div className="subject-cards">
           {subjects.map((subject, index) => (
             <SubjectCard
