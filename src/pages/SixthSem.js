@@ -1,7 +1,7 @@
 import React from 'react';
 import SubjectCard from '../components/SubjectCard';
 
-function FirstYear() {
+function SixthSem() {
   // Sample subject data for first year
   const subjects = [
     {
@@ -18,10 +18,10 @@ function FirstYear() {
   ];
 
   return (
-    <div className="first-year">
+    <div className="sixth-sem">
     
-      <div className="content">
-        <h2>First Year Subjects</h2>
+      <div className="sem-content">
+        <h2>Sixth Sem Subjects</h2>
         <div className="subject-cards">
           {subjects.map((subject, index) => (
             <SubjectCard
@@ -37,4 +37,4 @@ function FirstYear() {
   );
 }
 
-export default FirstYear;
+export default SixthSem;

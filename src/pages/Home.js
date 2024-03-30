@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import enhanceText from '../components/Enhance';
+import Dial from '../components/Dial'
 
 function Home() {
   useEffect(() => {
@@ -82,23 +83,36 @@ function Home() {
       </div>
 
 
-      <div className="content">
+      {/* <div className="content">
         <ul>
           <li>
-            <Link to="/first-year">First Year</Link>
+            <Link to="/first-sem">First Sem</Link>
           </li>
           <li>
-            <Link to="/second-year">Second Year</Link>
+            <Link to="/second-sem">Second Sem</Link>
           </li>
           <li>
-            <Link to="/third-year">Third Year</Link>
+            <Link to="/third-sem">Third Sem</Link>
           </li>
           <li>
-            <Link to="/fourth-year">Fourth Year</Link>
+            <Link to="/fourth-sem">Fourth Sem</Link>
+          </li>
+          <li>
+            <Link to="/fifth-sem">Fifth Sem</Link>
+          </li>
+          <li>
+            <Link to="/sixth-sem">Sixth Sem</Link>
+          </li>
+          <li>
+            <Link to="/seventh-sem">Seventh Sem</Link>
+          </li>
+          <li>
+            <Link to="/eight-sem">Eight Sem</Link>
           </li>
         </ul>
-      </div>
+      </div>  */}
 
+      <Dial/>
     </>
   );
 }

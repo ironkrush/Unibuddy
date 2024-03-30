@@ -1,8 +1,8 @@
 import React from 'react';
 import SubjectCard from '../components/SubjectCard';
 
-function FourthYear() {
-    
+function SecondSem() {
+
   const subjects = [
     {
       subjectName: 'Mathematics',
@@ -18,10 +18,10 @@ function FourthYear() {
   ];
 
   return (
-    <div className="second-year">
+    <div className="second-sem">
     
-      <div className="content">
-        <h2>Fourth Year Subjects</h2>
+      <div className="sem-content">
+        <h2>Second Sem Subjects</h2>
         <div className="subject-cards">
           {subjects.map((subject, index) => (
             <SubjectCard
@@ -37,4 +37,4 @@ function FourthYear() {
   );
 }
 
-export default FourthYear;
+export default SecondSem;
