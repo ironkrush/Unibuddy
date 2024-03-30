@@ -1,10 +1,96 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom';
+import gsap from "gsap";
+import { useGSAP } from '@gsap/react';
+import { easeInOut } from 'framer-motion';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
+
+
 
 function Dial() {
+
+    const box = useRef(null);
+    const active = 4;
+
+    useEffect(() => {
+        const mncircles = document.querySelectorAll(".mncircle");
+
+        if (mncircles.length > 0) {
+            mncircles.forEach((val) => {
+                val.addEventListener("click", handleClick);
+            });
+        }
+
+        return () => {
+            if (mncircles.length > 0) {
+                mncircles.forEach((val) => {
+                    val.removeEventListener("click", handleClick);
+                });
+            }
+        };
+    }, []); 
+
+    useEffect(() => {
+        gsap.to('#circle', {
+            rotate: 0,
+            ease: easeInOut, 
+            duration: 2,
+            scrollTrigger: {
+                trigger: box.current,
+                start: "top 80%", 
+                end:"top 15%",
+                scrub: true, 
+            }
+        });
+
+        const mncircles = document.querySelectorAll(".mncircle");
+        if (mncircles && mncircles[active - 1]) {
+            gsap.to(mncircles[active - 1], {
+                opacity: 0.8
+            });
+        }
+    }, [active]);
+
+    const handleClick = (event) => {
+        const mncircles = document.querySelectorAll(".mncircle");
+        const index = Array.from(mncircles).indexOf(event.target);
+        gsap.to("#circle", {
+            rotate: (4 - (index + 1)) * 15 
+        });
+        greyout();
+        gsap.to(event.target, {
+            opacity: 0.7
+        });
+
+        const target = event.target.closest('.second');
+        if (target) {
+            gsap.to(target, {
+                opacity: 1
+            });
+        }
+    };
+
+    const greyout = () => {
+        const mncircles = document.querySelectorAll(".mncircle");
+        mncircles.forEach(circle => {
+            gsap.to(circle, {
+                opacity: 0.1
+            });
+        });
+        const seconds = document.querySelectorAll(".second");
+        seconds.forEach(circle => {
+            gsap.to(circle, {
+                opacity: 1
+            });
+        });
+    };
+
     return (
         <>
-            <div id="main">
+            <div id="main" ref={box}>
                 <div id="page1">
                     <div id="circle">
                         <div class="strip no1">
@@ -81,6 +167,16 @@ function Dial() {
                             <Link to="/eight-sem" className="dial-link">Eight Sem</Link>
                             </div>
                         </div>
+                    </div>
+                    <div id="panel">
+                        <div className="mncircle"></div>
+                        <div className="mncircle"></div>
+                        <div className="mncircle"></div>
+                        <div className="mncircle"></div>
+                        <div className="mncircle"></div>
+                        <div className="mncircle"></div>
+                        <div className="mncircle"></div>
+                        <div className="mncircle"></div>
                     </div>
                 </div>
             </div>

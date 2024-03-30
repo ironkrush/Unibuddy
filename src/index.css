@@ -310,9 +310,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  left: -100vh;
+  left: -120vh;
   top: 50%;
-  transform: translate(0%, -50%) rotate(10deg);
+  transform: translate(0%, -50%) rotate(100deg);
   position: absolute;
   height: 200vh;
   width: 200vh;
@@ -378,6 +378,7 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
+  opacity: 1;
 }
 h1{
   font-family: "Poppins", sans-serif;
@@ -390,4 +391,24 @@ h1{
   font-weight: 800;
   padding-left: 3vw;
   font-size: 7vh;
+}
+#panel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 5%;
+  height: 30%;
+}
+.mncircle{
+  cursor: pointer;
+  border-radius: 50%;
+  width: 1.5vw;
+  height: 1.5vw;
+  opacity: .1;
+  background-color: rgb(0, 0, 0);
 }
