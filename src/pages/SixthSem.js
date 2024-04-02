@@ -5,16 +5,20 @@ function SixthSem() {
   // Sample subject data for first year
   const subjects = [
     {
-      subjectName: 'Mathematics',
-      instructor: 'Prof. Smith',
-      description: 'Introduction to calculus and algebra.'
+      subjectName: 'Artificial Intelligence'
     },
     {
-      subjectName: 'Physics',
-      instructor: 'Dr. Johnson',
-      description: 'Fundamental principles of mechanics and thermodynamics.'
+      subjectName: 'Python Programming'
     },
-    // Add more subjects as needed
+    {
+      subjectName: 'Cryptography and Network Security'
+    },
+    {
+      subjectName: 'Internet of Things (Category: Systems)'
+    },
+    {
+      subjectName: 'Machine Learning (Category: Data Science & Machine Intelligence)'
+    },
   ];
 
   return (

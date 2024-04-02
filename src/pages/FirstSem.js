@@ -2,19 +2,23 @@ import React from 'react';
 import SubjectCard from '../components/SubjectCard';
 
 function FirstSem() {
-  // Sample subject data for first year
   const subjects = [
     {
-      subjectName: 'Mathematics',
-      instructor: 'Prof. Smith',
-      description: 'Introduction to calculus and algebra.'
+      subjectName: 'ENGINEERING MATHEMATICS I'
     },
     {
-      subjectName: 'Physics',
-      instructor: 'Dr. Johnson',
-      description: 'Fundamental principles of mechanics and thermodynamics.'
+      subjectName: 'FUNDAMENTAL OF PROGRAMMING'
     },
-    // Add more subjects as needed
+    {
+      subjectName: 'ELEMENTS OF CIVIL ENGINEERING'
+    },
+    {
+      subjectName: 'ENGINEERING GRAPHICS'
+    },
+    {
+      subjectName: 'FUNDAMENTAL OF PROGRAMMING'
+    },
+
   ];
 
   return (
@@ -27,7 +31,6 @@ function FirstSem() {
             <SubjectCard
               key={index}
               subjectName={subject.subjectName}
-              description={subject.description}
             />
           ))}
         </div>

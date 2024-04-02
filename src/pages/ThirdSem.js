@@ -5,16 +5,20 @@ function ThirdSem() {
 
   const subjects = [
     {
-      subjectName: 'Mathematics',
-      instructor: 'Prof. Smith',
-      description: 'Introduction to calculus and algebra.'
+      subjectName: 'Discrete Mathematics'
     },
     {
-      subjectName: 'Physics',
-      instructor: 'Dr. Johnson',
-      description: 'Fundamental principles of mechanics and thermodynamics.'
+      subjectName: 'Data Structures & Algorithms'
     },
-    // Add more subjects as needed
+    {
+      subjectName: 'Digital Electronics'
+    },
+    {
+      subjectName: 'IT Workshop'
+    },
+    {
+      subjectName: 'Database Management Systems'
+    },
   ];
 
   return (
@@ -27,7 +31,6 @@ function ThirdSem() {
             <SubjectCard
               key={index}
               subjectName={subject.subjectName}
-              description={subject.description}
             />
           ))}
         </div>

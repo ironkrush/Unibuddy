@@ -5,16 +5,23 @@ function SecondSem() {
 
   const subjects = [
     {
-      subjectName: 'Mathematics',
-      instructor: 'Prof. Smith',
-      description: 'Introduction to calculus and algebra.'
+      subjectName: 'ENGINEERING MATHEMATICS II'
     },
     {
-      subjectName: 'Physics',
-      instructor: 'Dr. Johnson',
-      description: 'Fundamental principles of mechanics and thermodynamics.'
+      subjectName: 'BASIC ELECTRICAL & ELECTRONICS ENGINEERING'
     },
-    // Add more subjects as needed
+    {
+      subjectName: 'FUNDAMENTAL OF MECHANICAL ENGINEERING'
+    },
+    {
+      subjectName: 'BUSINESS COMMUNICATION AND PRESENTATION SKILLS'
+    },
+    {
+      subjectName: 'INTRODUCTION TO INFORMATION & COMMUNICATION TECHNOLOGY'
+    },
+    {
+      subjectName: 'OBJECT ORIENTED PROGRAMMING WITH "C++"' 
+    }
   ];
 
   return (

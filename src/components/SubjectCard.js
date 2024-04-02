@@ -1,10 +1,9 @@
 import React from 'react';
 
-function SubjectCard({ subjectName, description }) {
+function SubjectCard({ subjectName }) {
   return (
     <div className="subject-card">
       <h3>{subjectName}</h3>
-      <p>{description}</p>
     </div>
   );
 }

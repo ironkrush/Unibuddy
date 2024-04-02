@@ -5,16 +5,20 @@ function FourthSem() {
     
   const subjects = [
     {
-      subjectName: 'Mathematics',
-      instructor: 'Prof. Smith',
-      description: 'Introduction to calculus and algebra.'
+      subjectName: 'Principles of Management'
     },
     {
-      subjectName: 'Physics',
-      instructor: 'Dr. Johnson',
-      description: 'Fundamental principles of mechanics and thermodynamics.'
+      subjectName: 'Probability, Statistics and Numerical Methods'
     },
-    // Add more subjects as needed
+    {
+      subjectName: 'Computer Organization & Architecture'
+    },
+    {
+      subjectName: 'Operating Systems'
+    },
+    {
+      subjectName: 'Object Oriented Programming using Java'
+    },
   ];
 
   return (
@@ -27,7 +31,6 @@ function FourthSem() {
             <SubjectCard
               key={index}
               subjectName={subject.subjectName}
-              description={subject.description}
             />
           ))}
         </div>

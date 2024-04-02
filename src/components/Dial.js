@@ -40,8 +40,8 @@ function Dial() {
             duration: 2,
             scrollTrigger: {
                 trigger: box.current,
-                start: "top 80%", 
-                end:"top 15%",
+                start: "top 90%", 
+                end:"top 25%",
                 scrub: true, 
             }
         });
@@ -64,13 +64,6 @@ function Dial() {
         gsap.to(event.target, {
             opacity: 0.7
         });
-
-        const target = event.target.closest('.second');
-        if (target) {
-            gsap.to(target, {
-                opacity: 1
-            });
-        }
     };
 
     const greyout = () => {
@@ -80,12 +73,6 @@ function Dial() {
                 opacity: 0.1
             });
         });
-        const seconds = document.querySelectorAll(".second");
-        seconds.forEach(circle => {
-            gsap.to(circle, {
-                opacity: 1
-            });
-        });
     };
 
     return (
@@ -93,77 +80,77 @@ function Dial() {
             <div id="main" ref={box}>
                 <div id="page1">
                     <div id="circle">
-                        <div class="strip no1">
+                        <div className="strip no1">
 
-                            <div class="first">
-                                <div class="dot"></div>
+                            <div className="first">
+                                <div className="dot"></div>
                             </div>
-                            <div class="second">
+                            <div className="second">
 
                                 <Link to="/first-sem" className="dial-link">First Sem</Link>
                             </div>
 
                         </div>
-                        <div class="strip no2">
+                        <div className="strip no2">
 
-                            <div class="first">
-                                <div class="dot"></div>
+                            <div className="first">
+                                <div className="dot"></div>
                             </div>
-                            <div class="second">
+                            <div className="second">
                             <Link to="/second-sem" className="dial-link">Second Sem</Link>
                             </div>
 
                         </div>
-                        <div class="strip no3">
+                        <div className="strip no3">
 
-                            <div class="first">
-                                <div class="dot"></div>
+                            <div className="first">
+                                <div className="dot"></div>
                             </div>
-                            <div class="second">
+                            <div className="second">
 
                             <Link to="/third-sem" className="dial-link">Third Sem</Link>
                             </div>
                         </div>
-                        <div class="strip no4">
-                            <div class="first">
-                                <div class="dot"></div>
+                        <div className="strip no4">
+                            <div className="first">
+                                <div className="dot"></div>
                             </div>
-                            <div class="second">
+                            <div className="second">
                             <Link to="/fourth-sem" className="dial-link">Fourth Sem</Link>
                             </div>
                         </div>
-                        <div class="strip no5">
+                        <div className="strip no5">
 
-                            <div class="first">
-                                <div class="dot"></div>
+                            <div className="first">
+                                <div className="dot"></div>
                             </div>
-                            <div class="second">
+                            <div className="second">
                             <Link to="/fifth-sem" className="dial-link">Fifth Sem</Link>
                             </div>
                         </div>
-                        <div class="strip no6">
+                        <div className="strip no6">
 
-                            <div class="first">
-                                <div class="dot"></div>
+                            <div className="first">
+                                <div className="dot"></div>
                             </div>
-                            <div class="second">
+                            <div className="second">
                             <Link to="/sixth-sem" className="dial-link">Sixth Sem</Link>
                             </div>
                         </div>
-                        <div class="strip no7">
+                        <div className="strip no7">
 
-                            <div class="first">
-                                <div class="dot"></div>
+                            <div className="first">
+                                <div className="dot"></div>
                             </div>
-                            <div class="second">
+                            <div className="second">
                             <Link to="/seventh-sem" className="dial-link">Seventh Sem</Link>
                             </div>
                         </div>
-                        <div class="strip no8">
-                            <div class="first">
-                                <div class="dot"></div>
+                        <div className="strip no8">
+                            <div className="first">
+                                <div className="dot"></div>
                             </div>
-                            <div class="second">
+                            <div className="second">
                             <Link to="/eight-sem" className="dial-link">Eight Sem</Link>
                             </div>
                         </div>

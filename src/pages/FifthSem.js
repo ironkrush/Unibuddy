@@ -5,16 +5,26 @@ function FifthSem() {
   // Sample subject data for first year
   const subjects = [
     {
-      subjectName: 'Mathematics',
-      instructor: 'Prof. Smith',
-      description: 'Introduction to calculus and algebra.'
+      subjectName: 'Software Engineering'
     },
     {
-      subjectName: 'Physics',
-      instructor: 'Dr. Johnson',
-      description: 'Fundamental principles of mechanics and thermodynamics.'
+      subjectName: 'Microprocessor  Architecture and Programming'
     },
-    // Add more subjects as needed
+    {
+      subjectName: 'Theory of Computation'
+    },
+    {
+      subjectName: 'Design & Analysis of Algorithms'
+    },
+    {
+      subjectName: 'Computer Networks'
+    },
+    {
+      subjectName: 'Advanced Java Programming (Category: Application)'
+    },
+    {
+      subjectName: 'Dot Net Technology (Category: Application)'
+    }
   ];
 
   return (

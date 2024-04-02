@@ -2,19 +2,19 @@ import React from 'react';
 import SubjectCard from '../components/SubjectCard';
 
 function EightSem() {
-  // Sample subject data for first year
   const subjects = [
     {
-      subjectName: 'Mathematics',
-      instructor: 'Prof. Smith',
-      description: 'Introduction to calculus and algebra.'
+      subjectName: 'Next Generation Networks'
     },
     {
-      subjectName: 'Physics',
-      instructor: 'Dr. Johnson',
-      description: 'Fundamental principles of mechanics and thermodynamics.'
+      subjectName: 'Big Data Analytics'
     },
-    // Add more subjects as needed
+    {
+      subjectName: 'Web Data Management (Category: Data Science)'
+    },
+    {
+      subjectName: 'Neural Network and Deep Learning (Category: Data Science)'
+    }
   ];
 
   return (
@@ -26,7 +26,6 @@ function EightSem() {
             <SubjectCard
               key={index}
               subjectName={subject.subjectName}
-              description={subject.description}
             />
           ))}
         </div>

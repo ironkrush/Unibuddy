@@ -1,6 +1,4 @@
-// Home.js
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import enhanceText from '../components/Enhance';
 import Dial from '../components/Dial'
 
@@ -81,36 +79,6 @@ function Home() {
           </div>
         </div >
       </div>
-
-
-      {/* <div className="content">
-        <ul>
-          <li>
-            <Link to="/first-sem">First Sem</Link>
-          </li>
-          <li>
-            <Link to="/second-sem">Second Sem</Link>
-          </li>
-          <li>
-            <Link to="/third-sem">Third Sem</Link>
-          </li>
-          <li>
-            <Link to="/fourth-sem">Fourth Sem</Link>
-          </li>
-          <li>
-            <Link to="/fifth-sem">Fifth Sem</Link>
-          </li>
-          <li>
-            <Link to="/sixth-sem">Sixth Sem</Link>
-          </li>
-          <li>
-            <Link to="/seventh-sem">Seventh Sem</Link>
-          </li>
-          <li>
-            <Link to="/eight-sem">Eight Sem</Link>
-          </li>
-        </ul>
-      </div>  */}
 
       <Dial/>
     </>

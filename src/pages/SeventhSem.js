@@ -5,16 +5,17 @@ function SeventhSem() {
   // Sample subject data for first year
   const subjects = [
     {
-      subjectName: 'Mathematics',
-      instructor: 'Prof. Smith',
-      description: 'Introduction to calculus and algebra.'
+      subjectName: 'Compiler Design'
     },
     {
-      subjectName: 'Physics',
-      instructor: 'Dr. Johnson',
-      description: 'Fundamental principles of mechanics and thermodynamics.'
+      subjectName: 'Cyber Security'
     },
-    // Add more subjects as needed
+    {
+      subjectName: 'Natural Language Processing (Category: Data Science)'
+    },
+    {
+      subjectName: 'Blockchain Technology (Category: Application)'
+    }
   ];
 
   return (
