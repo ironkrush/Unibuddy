@@ -28,7 +28,6 @@ function SeventhSem() {
             <SubjectCard
               key={index}
               subjectName={subject.subjectName}
-              description={subject.description}
             />
           ))}
         </div>
