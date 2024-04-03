@@ -1,8 +1,36 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import enhanceText from '../components/Enhance';
 import Dial from '../components/Dial'
+import gsap from "gsap";
+import { useGSAP } from '@gsap/react';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import { easeInOut } from 'framer-motion';
+
+gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
 
 function Home() {
+  const box = useRef(null);
+  
+
+  useEffect(() => {
+    const element = box.current;
+
+    gsap.set(element, { opacity: 2 });
+
+    gsap.to(element, {
+      opacity: 0.3,
+      duration: 5,
+      ease: easeInOut,
+      scrollTrigger: {
+        trigger: element,
+        start: 'top 35%', // Trigger animation when 75% of the parent element is scrolled into view
+        end: 'bottom top',
+        scrub: true, // Smooth animation effect
+      },
+    });
+  },[]);
+
   useEffect(() => {
     const interBubble = document.querySelector('.interactive');
     let curX = 0;
@@ -39,8 +67,8 @@ function Home() {
 
   return (
     <>
-      
-      <div className="gradient-bg">
+
+      <div className="gradient-bg" ref={box}>
         <svg xmlns="http://www.w3.org/2000/svg">
           <defs>
             <filter id="goo">
@@ -58,7 +86,7 @@ function Home() {
           <div className="g5"></div>
           <div className="interactive"></div>
         </div>
-       
+
         <div className="home">
           <div className="text">
             <div className="line">
@@ -80,7 +108,7 @@ function Home() {
         </div >
       </div>
 
-      <Dial/>
+      <Dial />
     </>
   );
 }

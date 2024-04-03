@@ -4,76 +4,63 @@ import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
 import { easeInOut } from 'framer-motion';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import Lottie from 'lottie-react';
+import reactLogo from '../assets/react-logo.json';
+import upArrow from '../assets/uparrow.json'
+import downArrow from '../assets/downarrow.json'
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
-
-
 function Dial() {
 
     const box = useRef(null);
-    const active = 4;
+    const upwardArrow = useRef(null);
+    const downwardArrow = useRef(null);
+  
 
     useEffect(() => {
-        const mncircles = document.querySelectorAll(".mncircle");
-
-        if (mncircles.length > 0) {
-            mncircles.forEach((val) => {
-                val.addEventListener("click", handleClick);
+        const handleUpwardArrowClick = () => {
+            const currentRotation = gsap.getProperty("#circle", "rotate") || 0;
+            const newRotation = Math.min(currentRotation + 15, 45);
+            gsap.to("#circle", {
+                rotate: newRotation
             });
-        }
-
-        return () => {
-            if (mncircles.length > 0) {
-                mncircles.forEach((val) => {
-                    val.removeEventListener("click", handleClick);
-                });
-            }
         };
-    }, []); 
+        
+        const handleDownwardArrowClick = () => {
+            const currentRotation = gsap.getProperty("#circle", "rotate") || 0;
+            const newRotation = Math.max(currentRotation - 15, -60);
+            gsap.to("#circle", {
+                rotate: newRotation
+            });
+        };
+    
+        const upwardArrowRef = upwardArrow.current;
+        const downwardArrowRef = downwardArrow.current;
+    
+        upwardArrowRef?.addEventListener("click", handleUpwardArrowClick);
+        downwardArrowRef?.addEventListener("click", handleDownwardArrowClick);
+    
+        return () => {
+            upwardArrowRef?.removeEventListener("click", handleUpwardArrowClick);
+            downwardArrowRef?.removeEventListener("click", handleDownwardArrowClick);
+        };
+    }, []);
 
     useEffect(() => {
         gsap.to('#circle', {
             rotate: 0,
-            ease: easeInOut, 
+            ease: easeInOut,
             duration: 2,
             scrollTrigger: {
                 trigger: box.current,
-                start: "top 90%", 
-                end:"top 25%",
-                scrub: true, 
+                start: "top 90%",
+                end: "top 25%",
+                scrub: true,
             }
         });
-
-        const mncircles = document.querySelectorAll(".mncircle");
-        if (mncircles && mncircles[active - 1]) {
-            gsap.to(mncircles[active - 1], {
-                opacity: 0.8
-            });
-        }
-    }, [active]);
-
-    const handleClick = (event) => {
-        const mncircles = document.querySelectorAll(".mncircle");
-        const index = Array.from(mncircles).indexOf(event.target);
-        gsap.to("#circle", {
-            rotate: (4 - (index + 1)) * 15 
-        });
-        greyout();
-        gsap.to(event.target, {
-            opacity: 0.7
-        });
-    };
-
-    const greyout = () => {
-        const mncircles = document.querySelectorAll(".mncircle");
-        mncircles.forEach(circle => {
-            gsap.to(circle, {
-                opacity: 0.1
-            });
-        });
-    };
+    }, []);
 
     return (
         <>
@@ -97,7 +84,7 @@ function Dial() {
                                 <div className="dot"></div>
                             </div>
                             <div className="second">
-                            <Link to="/second-sem" className="dial-link">Second Sem</Link>
+                                <Link to="/second-sem" className="dial-link">Second Sem</Link>
                             </div>
 
                         </div>
@@ -108,7 +95,7 @@ function Dial() {
                             </div>
                             <div className="second">
 
-                            <Link to="/third-sem" className="dial-link">Third Sem</Link>
+                                <Link to="/third-sem" className="dial-link">Third Sem</Link>
                             </div>
                         </div>
                         <div className="strip no4">
@@ -116,7 +103,7 @@ function Dial() {
                                 <div className="dot"></div>
                             </div>
                             <div className="second">
-                            <Link to="/fourth-sem" className="dial-link">Fourth Sem</Link>
+                                <Link to="/fourth-sem" className="dial-link">Fourth Sem</Link>
                             </div>
                         </div>
                         <div className="strip no5">
@@ -125,7 +112,7 @@ function Dial() {
                                 <div className="dot"></div>
                             </div>
                             <div className="second">
-                            <Link to="/fifth-sem" className="dial-link">Fifth Sem</Link>
+                                <Link to="/fifth-sem" className="dial-link">Fifth Sem</Link>
                             </div>
                         </div>
                         <div className="strip no6">
@@ -134,7 +121,7 @@ function Dial() {
                                 <div className="dot"></div>
                             </div>
                             <div className="second">
-                            <Link to="/sixth-sem" className="dial-link">Sixth Sem</Link>
+                                <Link to="/sixth-sem" className="dial-link">Sixth Sem</Link>
                             </div>
                         </div>
                         <div className="strip no7">
@@ -143,7 +130,7 @@ function Dial() {
                                 <div className="dot"></div>
                             </div>
                             <div className="second">
-                            <Link to="/seventh-sem" className="dial-link">Seventh Sem</Link>
+                                <Link to="/seventh-sem" className="dial-link">Seventh Sem</Link>
                             </div>
                         </div>
                         <div className="strip no8">
@@ -151,20 +138,20 @@ function Dial() {
                                 <div className="dot"></div>
                             </div>
                             <div className="second">
-                            <Link to="/eight-sem" className="dial-link">Eight Sem</Link>
+                                <Link to="/eight-sem" className="dial-link">Eight Sem</Link>
                             </div>
                         </div>
+
                     </div>
                     <div id="panel">
-                        <div className="mncircle"></div>
-                        <div className="mncircle"></div>
-                        <div className="mncircle"></div>
-                        <div className="mncircle"></div>
-                        <div className="mncircle"></div>
-                        <div className="mncircle"></div>
-                        <div className="mncircle"></div>
-                        <div className="mncircle"></div>
+                        <div className="mncircle" ref={upwardArrow}>
+                            <Lottie animationData={upArrow}/>
+                        </div>
+                        <div className="mncircle" ref={downwardArrow}>
+                        <Lottie animationData={downArrow}/>
+                        </div>
                     </div>
+                    <Lottie className='reactLogo' animationData={reactLogo} />
                 </div>
             </div>
         </>

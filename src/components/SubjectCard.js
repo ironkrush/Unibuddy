@@ -2,9 +2,9 @@ import React from 'react';
 
 function SubjectCard({ subjectName }) {
   return (
-    <div className="subject-card">
-      <h3>{subjectName}</h3>
-    </div>
+          <div className="sub-card">
+            <h3 className='sub-heading'>{subjectName}</h3>
+          </div> 
   );
 }
 
