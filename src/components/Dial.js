@@ -8,6 +8,7 @@ import Lottie from 'lottie-react';
 import reactLogo from '../assets/react-logo.json';
 import upArrow from '../assets/uparrow.json'
 import downArrow from '../assets/downarrow.json'
+import Lappy from '../assets/lappy.json'
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -152,6 +153,7 @@ function Dial() {
                         </div>
                     </div>
                     <Lottie className='reactLogo' animationData={reactLogo} />
+                    <Lottie className='lappyLogo' animationData={Lappy} />
                 </div>
             </div>
         </>

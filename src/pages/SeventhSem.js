@@ -1,35 +1,20 @@
 import React from 'react';
-import SubjectCard from '../components/SubjectCard';
+import SubjectCard1 from '../components/SubjectCard1';
+import SubjectCard2 from '../components/SubjectCard2';
+import SubjectCard3 from '../components/SubjectCard3';
+import SubjectCard4 from '../components/SubjectCard4';
 
 function SeventhSem() {
-  // Sample subject data for first year
-  const subjects = [
-    {
-      subjectName: 'Compiler Design'
-    },
-    {
-      subjectName: 'Cyber Security'
-    },
-    {
-      subjectName: 'Natural Language Processing (Category: Data Science)'
-    },
-    {
-      subjectName: 'Blockchain Technology (Category: Application)'
-    }
-  ];
-
   return (
-    <div className="seventh-sem">
+    <div className="sem">
     
       <div className="sem-content">
-        <h2>Seventh Sem Subjects</h2>
+        <h3>Seventh Sem Subjects</h3>
         <div className="subject-cards">
-          {subjects.map((subject, index) => (
-            <SubjectCard
-              key={index}
-              subjectName={subject.subjectName}
-            />
-          ))}
+        <SubjectCard1 subjectName={"Compiler Design"} />
+          <SubjectCard2 subjectName={"Cyber Security"} />
+          <SubjectCard3 subjectName={"Natural Language Processing (Category: Data Science)"} />
+          <SubjectCard4 subjectName={"Blockchain Technology (Category: Application)"} />
         </div>
       </div>
      

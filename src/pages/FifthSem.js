@@ -1,44 +1,28 @@
 import React from 'react';
-import SubjectCard from '../components/SubjectCard';
+import SubjectCard1 from '../components/SubjectCard1';
+import SubjectCard2 from '../components/SubjectCard2';
+import SubjectCard3 from '../components/SubjectCard3';
+import SubjectCard4 from '../components/SubjectCard4';
+import SubjectCard5 from '../components/SubjectCard5';
+import SubjectCard6 from '../components/SubjectCard6';
+import SubjectCard7 from '../components/SubjectCard7';
+
 
 function FifthSem() {
-  // Sample subject data for first year
-  const subjects = [
-    {
-      subjectName: 'Software Engineering'
-    },
-    {
-      subjectName: 'Microprocessor  Architecture and Programming'
-    },
-    {
-      subjectName: 'Theory of Computation'
-    },
-    {
-      subjectName: 'Design & Analysis of Algorithms'
-    },
-    {
-      subjectName: 'Computer Networks'
-    },
-    {
-      subjectName: 'Advanced Java Programming (Category: Application)'
-    },
-    {
-      subjectName: 'Dot Net Technology (Category: Application)'
-    }
-  ];
 
   return (
-    <div className="fifth-sem">
+    <div className="sem">
     
       <div className="sem-content">
-        <h2>Fifth Sem Subjects</h2>
+        <h3>Fifth Sem Subjects</h3>
         <div className="subject-cards">
-          {subjects.map((subject, index) => (
-            <SubjectCard
-              key={index}
-              subjectName={subject.subjectName}
-            />
-          ))}
+        <SubjectCard1 subjectName={"Software Engineering"} />
+          <SubjectCard2 subjectName={"Theory of Computation"} />
+          <SubjectCard3 subjectName={"Design & Analysis of Algorithms"} />
+          <SubjectCard4 subjectName={"Computer Networks"} />
+          <SubjectCard5 subjectName={"Advanced Java Programming (Category: Application)"} />
+          <SubjectCard6 subjectName={"Dot Net Technology (Category: Application)"} />
+          <SubjectCard7 subjectName={"Microprocessor  Architecture and Programming"} />
         </div>
       </div>
      

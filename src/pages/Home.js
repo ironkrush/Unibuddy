@@ -5,17 +5,18 @@ import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { easeInOut } from 'framer-motion';
+import Loader from '../components/Loader';
+import Footer from '../components/Footer';
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 function Home() {
   const box = useRef(null);
-  
 
   useEffect(() => {
     const element = box.current;
-
+  
     gsap.set(element, { opacity: 2 });
 
     gsap.to(element, {
@@ -24,12 +25,12 @@ function Home() {
       ease: easeInOut,
       scrollTrigger: {
         trigger: element,
-        start: 'top 35%', // Trigger animation when 75% of the parent element is scrolled into view
+        start: 'top 35%', 
         end: 'bottom top',
-        scrub: true, // Smooth animation effect
+        scrub: true, 
       },
     });
-  },[]);
+  }, []);
 
   useEffect(() => {
     const interBubble = document.querySelector('.interactive');
@@ -69,6 +70,7 @@ function Home() {
     <>
 
       <div className="gradient-bg" ref={box}>
+        <Loader className="loader"/>
         <svg xmlns="http://www.w3.org/2000/svg">
           <defs>
             <filter id="goo">
@@ -109,6 +111,7 @@ function Home() {
       </div>
 
       <Dial />
+      <Footer />
     </>
   );
 }

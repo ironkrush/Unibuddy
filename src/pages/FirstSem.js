@@ -1,41 +1,24 @@
 import React from 'react';
-import SubjectCard from '../components/SubjectCard';
+import SubjectCard1 from '../components/SubjectCard1';
+import SubjectCard2 from '../components/SubjectCard2';
+import SubjectCard3 from '../components/SubjectCard3';
+import SubjectCard4 from '../components/SubjectCard4';
+import SubjectCard5 from '../components/SubjectCard5';
 
 function FirstSem() {
-  const subjects = [
-    {
-      subjectName: 'ENGINEERING MATHEMATICS I'
-    },
-    {
-      subjectName: 'FUNDAMENTAL OF PROGRAMMING'
-    },
-    {
-      subjectName: 'ELEMENTS OF CIVIL ENGINEERING'
-    },
-    {
-      subjectName: 'ENGINEERING GRAPHICS'
-    },
-    {
-      subjectName: 'FUNDAMENTAL OF PROGRAMMING'
-    },
-
-  ];
 
   return (
-    <div className="first-sem">
-    
+    <div className="sem">   
       <div className="sem-content">
-        <h2>First Sem Subjects</h2>
+        <h3>First Sem Subjects</h3>
         <div className="subject-cards">
-          {subjects.map((subject, index) => (
-            <SubjectCard
-              key={index}
-              subjectName={subject.subjectName}
-            />
-          ))}
+        <SubjectCard1 subjectName={"ENGINEERING MATHEMATICS - I"} />
+          <SubjectCard2 subjectName={"FUNDAMENTAL OF PROGRAMMING"} />
+          <SubjectCard3 subjectName={"ELEMENTS OF CIVIL ENGINEERING"} />
+          <SubjectCard4 subjectName={"ENGINEERING GRAPHICS"} />
+          <SubjectCard5 subjectName={"FUNDAMENTAL OF PROGRAMMING"} />
         </div>
-      </div>
-     
+      </div>     
     </div>
   );
 }

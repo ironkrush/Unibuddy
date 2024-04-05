@@ -8,14 +8,11 @@ import FourthSem from './pages/FourthSem';
 import FifthSem from './pages/FifthSem';
 import SixthSem from './pages/SixthSem';
 import SeventhSem from './pages/SeventhSem';
-import Header from './components/Header';
-import Footer from './components/Footer';
 import EightSem from './pages/EightSem';
 
 function App() {
   return (
     <>
-    <Header />
     <Router>
       <Routes> 
         <Route path="/" element={<Home />} />
@@ -29,7 +26,7 @@ function App() {
         <Route path="/eight-sem" element={<EightSem />} />
       </Routes>
     </Router>
-     <Footer />
+    
      </>
   );
 }
