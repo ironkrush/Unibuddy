@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "monument";
+  src: url(./assets/MonumentExtended-FreeForPersonalUse/MonumentExtended-Regular.otf);
+}
 :root {
   --green: rgb(42, 252, 152);
   --blue: rgb(41, 121, 255);
@@ -15,6 +19,7 @@
   --orange: #fcab1c;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  --m:4rem;
 }
 
 * {
@@ -533,12 +538,20 @@ h1 {
   background-color: transparent;
   display: flex;
   align-items: center;
-  position: relative !important;
+  position: absolute !important;
   height: 8vh;
   width: 18vw;
   z-index: 20000 !important;
   animation: none;
 }
+#loadhead{
+  width:35vw;
+  height: 8.5vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 
 #cloud1 {
   top: -15%;
@@ -566,7 +579,7 @@ h1 {
 /* first sub card  */
 .sub-content1 {
   display: flex;
-  justify-self: center;
+  justify-content: center;
 }
 
 .box1 {
@@ -655,7 +668,7 @@ h1 {
 /* second sub card  */
 .sub-content2 {
   display: flex;
-  justify-self: center;
+  justify-content: center;
 }
 
 .box2 {
@@ -744,7 +757,7 @@ h1 {
 /* third sub card  */
 .sub-content3 {
   display: flex;
-  justify-self: center;
+  justify-content: center;
 }
 
 .box3 {
@@ -833,7 +846,7 @@ h1 {
 /* fourth sub card  */
 .sub-content4 {
   display: flex;
-  justify-self: center;
+  justify-content: center;
 }
 
 .box4 {
@@ -917,17 +930,10 @@ h1 {
   margin-bottom: 10px;
 }
 
-.subject-cards {
-  display: grid;
-  justify-self: center;
-  grid-template-columns: repeat(3, 1fr);
-
-}
-
 /* fifth sub card  */
 .sub-content5 {
   display: flex;
-  justify-self: center;
+  justify-content: center;
 }
 
 .box5 {
@@ -1011,111 +1017,10 @@ h1 {
   margin-bottom: 10px;
 }
 
-.subject-cards {
-  display: grid;
-  justify-self: center;
-  grid-template-columns: repeat(3, 1fr);
-
-}
-
 /* sixh sub card  */
 .sub-content6 {
   display: flex;
-  justify-self: center;
-}
-
-.box6 {
-  position: relative;
-  width: 220px;
-  height: 300px;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  transition: 0.8s;
-  z-index: 1;
-}
-
-.box6:before {
-  content: " ";
-  position: absolute;
-  left: 50px;
-  width: 50%;
-  height: 50%;
-  text-decoration: none;
-  background: #fff;
-  border-radius: 8px;
-  transition: 0.5s;
-}
-
-.box6::after {
-  content: "";
-  position: absolute;
-
-  left: 50;
-  width: 50%;
-  height: 50%;
-  background: #fff;
-  border-radius: 8px;
-  transition: 0.5s;
-  filter: blur(30px);
-}
-
-.box6:hover:before,
-.box6:hover:after {
-  transform: scale(1.7);
-}
-
-.box6:before,
-.box6:after {
-  background: linear-gradient(315deg, #1f4037, #99f2c8);
-}
-
-.box6 span {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 5;
-  pointer-events: none;
-}
-
-.box6 .content6 {
-  position: relative;
-  width: 190px;
-  height: 254px;
-  padding: 20px 40px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  z-index: 1;
-  transform: 0.5s;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.box6 .content6 .subheading6 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 20px;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.subject-cards {
-  display: grid;
-  justify-self: center;
-  grid-template-columns: repeat(3, 1fr);
-
-}
-
-/* sixh sub card  */
-.sub-content6 {
-  display: flex;
-  justify-self: center;
 }
 
 .box6 {
@@ -1199,17 +1104,10 @@ h1 {
   margin-bottom: 10px;
 }
 
-.subject-cards {
-  display: grid;
-  justify-self: center;
-  grid-template-columns: repeat(3, 1fr);
-
-}
-
 /* seventh sub card  */
 .sub-content7 {
   display: flex;
-  justify-self: center;
+  justify-content: center;
 }
 
 .box7 {
@@ -1293,14 +1191,12 @@ h1 {
   margin-bottom: 10px;
 }
 
+/* semwise properties */
 .subject-cards {
   display: grid;
-  justify-self: center;
   grid-template-columns: repeat(3, 1fr);
-
+  gap: 5vh;
 }
-
-/* semwise properties */
 .sem {
   min-height: 100vh;
   background: #303030;
@@ -1317,4 +1213,227 @@ h1 {
   margin: 4vh;
   border-bottom: 2px solid #fff;
   padding-bottom: 2vh;
+}
+.fixing{
+  display: grid;
+  justify-self: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+/* FOOTER CSS start  */
+#footbody {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: black;
+  color: white;
+  font-family: "IBM Plex Sans";
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  height: 190vh;
+  margin: 0;
+  padding: 0%;
+  color: #d5d5d5;
+  font-size: calc(0.3 * var(--m));
+}
+#text {
+  font-size: 2.5vw;
+}
+
+.card {
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  border-radius: calc(0.5 * var(--m));
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  position: sticky;
+}
+#involve{
+ font-family: 'monument';
+ margin-bottom: 10vh;
+ margin-top: 10vh;
+ background: -webkit-linear-gradient(-86deg, #EEF85B 5%, #7AEC8D 53%, #09E5C3 91%);
+ background-clip: text;
+ -webkit-text-stroke: 4px transparent;
+ color: #232d2d;
+ letter-spacing: 1vh;
+}
+#elem-container{
+    width: 100%;
+}
+.elem {
+ border-top: white solid 1.5px ;
+ border-bottom: white solid 1.5px ;
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.elem .overlay {
+  background: rgb(9,25,171);
+  background: linear-gradient(85deg, rgba(9,25,171,1) 13%, rgba(46,226,81,1) 76%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: 1s ease-in-out;
+  top: -100%;
+ 
+}
+.elem:hover .overlay {
+  top: 0%;
+  color: #121212;
+ 
+}
+.emojis{
+    margin-left: 4vw;
+    margin-right: 4vw;
+    width: 100%;
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    font-family: "monument";
+    letter-spacing: 1vw;
+    font-size: 2.3vw;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+#fixed-image {
+    height: 35vh;
+    width: 20vw;
+    border-radius: 15px;
+    transform: translate(-50,-50);
+    top: -12%;
+    left: 10%;
+    z-index: 99;
+    display: none;
+    background-size: cover;
+    background-position: top;
+    transition: 1 ease;
+    pointer-events:none;
+    position:fixed;
+    animation: morph 5s ease-in-out infinite ;
+    background-position: center;
+}
+footer {
+  margin-top: 0vh;
+  z-index: 500;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding: 5rem 2vw;
+  position: relative;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0) 5%,
+    rgba(0, 0, 0, 0.3) 20%,
+    rgba(0, 0, 0, 0.6) 30%,
+    rgba(0, 0, 0, 0.8) 40%,
+    rgba(0, 0, 0, 1) 50%,
+    rgb(0, 0, 0)
+  );
+  z-index: -7;
+}
+
+.backdrop {
+  z-index: -5;
+  position: absolute;
+  inset: 0;
+ background-color: #000;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+
+  mask-image: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.5) 10%,
+    rgba(0, 0, 0, 0.8) 20%,
+    rgba(0, 0, 0, 1) 30%,
+    rgb(0, 0, 0)
+  );
+
+  -webkit-mask-image: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.5) 10%,
+    rgba(0, 0, 0, 0.8) 20%,
+    rgba(0, 0, 0, 1) 30%,
+    rgb(0, 0, 0)
+  );
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: calc(0.3 * var(--m)) calc(0.8 * var(--m));
+  width: 60%;
+}
+
+.col2,
+.col3 {
+  background-color: #121212;
+  border-radius: calc(0.5 * var(--m));
+}
+
+img {
+  height: calc(0.3 * var(--m));
+  object-fit: cover;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.link {
+  width: calc(0.8 * var(--m));
+  height: calc(0.8 * var(--m));
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: calc(0.1 * var(--m));
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes morph {
+  0%,100%{
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50%{
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  :root {
+    --m: 3rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  footer {
+    flex-direction: column;
+    padding: 5rem 20vw;
+  }
+  .col {
+    width: 100%;
+  }
 }

@@ -9,6 +9,7 @@ import FifthSem from './pages/FifthSem';
 import SixthSem from './pages/SixthSem';
 import SeventhSem from './pages/SeventhSem';
 import EightSem from './pages/EightSem';
+import Content from './components/Content';
 
 function App() {
   return (
@@ -16,14 +17,22 @@ function App() {
     <Router>
       <Routes> 
         <Route path="/" element={<Home />} />
-        <Route path="/first-sem" element={<FirstSem />} />
-        <Route path="/second-sem" element={<SecondSem />} />
-        <Route path="/third-sem" element={<ThirdSem />} />
-        <Route path="/fourth-sem" element={<FourthSem />} />
-        <Route path="/fifth-sem" element={<FifthSem />} />
-        <Route path="/sixth-sem" element={<SixthSem />} />
-        <Route path="/seventh-sem" element={<SeventhSem />} />
-        <Route path="/eight-sem" element={<EightSem />} />
+        <Route path="/firstsem" element={<FirstSem />} />
+        <Route path="/secondsem" element={<SecondSem />} />
+        <Route path="/thirdsem" element={<ThirdSem />} />
+        <Route path="/fourthsem" element={<FourthSem />} />
+        <Route path="/fifthsem" element={<FifthSem />} />
+        <Route path="/sixthsem" element={<SixthSem />} />
+        <Route path="/seventhsem" element={<SeventhSem />} />
+        <Route path="/eightsem" element={<EightSem />} />
+        <Route path="/firstsem/:id" element={<Content />} />
+        <Route path="/secondsem/:id" element={<Content />} />
+        <Route path="/thirdsem/:id" element={<Content />} />
+        <Route path="/fourthsem/:id" element={<Content />} />
+        <Route path="/fifthsem/:id" element={<Content />} />
+        <Route path="/sixthsem/:id" element={<Content />} />
+        <Route path="/seventhsem/:id" element={<Content />} />
+        <Route path="/eightsem/:id" element={<Content />} />
       </Routes>
     </Router>
     

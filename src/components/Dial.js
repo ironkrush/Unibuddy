@@ -75,7 +75,7 @@ function Dial() {
                             </div>
                             <div className="second">
 
-                                <Link to="/first-sem" className="dial-link">First Sem</Link>
+                                <Link to="/firstsem" className="dial-link">First Sem</Link>
                             </div>
 
                         </div>
@@ -85,7 +85,7 @@ function Dial() {
                                 <div className="dot"></div>
                             </div>
                             <div className="second">
-                                <Link to="/second-sem" className="dial-link">Second Sem</Link>
+                                <Link to="/secondsem" className="dial-link">Second Sem</Link>
                             </div>
 
                         </div>
@@ -96,7 +96,7 @@ function Dial() {
                             </div>
                             <div className="second">
 
-                                <Link to="/third-sem" className="dial-link">Third Sem</Link>
+                                <Link to="/thirdsem" className="dial-link">Third Sem</Link>
                             </div>
                         </div>
                         <div className="strip no4">
@@ -104,7 +104,7 @@ function Dial() {
                                 <div className="dot"></div>
                             </div>
                             <div className="second">
-                                <Link to="/fourth-sem" className="dial-link">Fourth Sem</Link>
+                                <Link to="/fourthsem" className="dial-link">Fourth Sem</Link>
                             </div>
                         </div>
                         <div className="strip no5">
@@ -113,7 +113,7 @@ function Dial() {
                                 <div className="dot"></div>
                             </div>
                             <div className="second">
-                                <Link to="/fifth-sem" className="dial-link">Fifth Sem</Link>
+                                <Link to="/fifthsem" className="dial-link">Fifth Sem</Link>
                             </div>
                         </div>
                         <div className="strip no6">
@@ -122,7 +122,7 @@ function Dial() {
                                 <div className="dot"></div>
                             </div>
                             <div className="second">
-                                <Link to="/sixth-sem" className="dial-link">Sixth Sem</Link>
+                                <Link to="/sixthsem" className="dial-link">Sixth Sem</Link>
                             </div>
                         </div>
                         <div className="strip no7">
@@ -131,7 +131,7 @@ function Dial() {
                                 <div className="dot"></div>
                             </div>
                             <div className="second">
-                                <Link to="/seventh-sem" className="dial-link">Seventh Sem</Link>
+                                <Link to="/seventhsem" className="dial-link">Seventh Sem</Link>
                             </div>
                         </div>
                         <div className="strip no8">
@@ -139,7 +139,7 @@ function Dial() {
                                 <div className="dot"></div>
                             </div>
                             <div className="second">
-                                <Link to="/eight-sem" className="dial-link">Eight Sem</Link>
+                                <Link to="/eightsem" className="dial-link">Eight Sem</Link>
                             </div>
                         </div>
 
