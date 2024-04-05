@@ -78,21 +78,25 @@ function Footer() {
             <div className="elem" id="pic1" data-image="megh.png">
               <div className="overlay"></div>
               <div className="emojis">
-                <h3>MEGH PATEL</h3>
+                <div className="surname">
+                <h3>MEGH</h3><p className='patel'>PATEL</p></div>
                 <h1>🌧</h1>
+                
               </div>
             </div>
             <div className="elem" id="pic2" data-image="AGNIVESH.jpg">
               <div className="overlay"></div>
               <div className="emojis">
-                <h3>AGNIVESH</h3>
+              <div className="surname">
+                <h3>AGNIVESH</h3><p className='patel'>PATEL</p></div>
                 <h1>🔥</h1>
               </div>
             </div>
             <div className="elem" id="pic3" data-image="https://images.unsplash.com/photo-1712081024208-f04e1956d736?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D">
               <div className="overlay"></div>
               <div className="emojis">
-                <h3>OM PATEL</h3>
+              <div className="surname">
+                <h3>OM</h3><p className='patel'>PATEL</p></div>
                 <h1>💣</h1>
               </div>
             </div>

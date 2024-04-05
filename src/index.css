@@ -1251,8 +1251,8 @@ h1 {
 }
 #involve{
  font-family: 'monument';
- margin-bottom: 10vh;
- margin-top: 10vh;
+ margin-bottom: 14vh;
+ margin-top: 14vh;
  background: -webkit-linear-gradient(-86deg, #EEF85B 5%, #7AEC8D 53%, #09E5C3 91%);
  background-clip: text;
  -webkit-text-stroke: 4px transparent;
@@ -1285,6 +1285,21 @@ h1 {
 .elem:hover .overlay {
   top: 0%;
   color: #121212;
+ 
+}
+.surname{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start !important;
+}
+.patel{
+  font-size: 1vw;
+  margin-left: 0%;
+  letter-spacing: 1vh;
+  font-family: 'monument';
+  color: white;
+  -webkit-text-stroke: 0px #fff;
+  display: flex;
  
 }
 .emojis{
@@ -1386,11 +1401,6 @@ footer::before {
   border-radius: calc(0.5 * var(--m));
 }
 
-img {
-  height: calc(0.3 * var(--m));
-  object-fit: cover;
-}
-
 .social {
   display: flex;
   flex-direction: row;
@@ -1436,4 +1446,64 @@ a{
   .col {
     width: 100%;
   }
+}
+#inside {
+  padding: 5vh;
+  width: 100vw;
+  min-height: 100%;
+  background-color: #303030;
+}
+
+.headcontent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "monument";
+  background: -webkit-linear-gradient(
+    -86deg,
+    #eef85b 5%,
+    #7aec8d 53%,
+    #09e5c3 91%
+  );
+  font-family: "monument";
+  background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+  color: #232d2d;
+  letter-spacing: 1vh;
+  padding: 3vw;
+}
+.pdf {
+  width: 80vw;
+  height: 90vh;
+}
+#pyq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yt-title {
+  font-family: "monument";
+  font-family: "monument";
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ytlogo {
+  height: 4vw;
+  width: 4vw;
+}
+#video-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vh;
+  flex-wrap: wrap;
+}
+.yt-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

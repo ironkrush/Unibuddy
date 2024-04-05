@@ -1,18 +1,18 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import Lottie from 'lottie-react';
+import ytLogo from '../assets/ytlogo.json'
 
 function Content() {
-  // Retrieve subjectId from URL parameters
+ 
   let { id } = useParams();
   
-  // Define your PDF links object
+ 
   const subjectData  = {
     1: {
       pdfLink: "https://drive.google.com/file/d/13R8iOoJqEp7QDJGX0oipdxUla2FYmAgI/view?usp=sharing",
       youtubeLinks: [
-        "https://youtube.com/playlist?list=PLvDFTOvV1tapwV_9bgZk33_J_aVlNZloS&si=PgF4cmpFP5gsDGpM",
-        "https://www.youtube.com/watch?v=video2",
-        // Add more YouTube video links as needed
+        "https://youtube.com/playlist?list=PLvDFTOvV1tapwV_9bgZk33_J_aVlNZloS&si=PgF4cmpFP5gsDGpM"
       ]
     },
     2: {
@@ -20,7 +20,7 @@ function Content() {
       youtubeLinks: [
         "https://www.youtube.com/watch?v=video3",
         "https://www.youtube.com/watch?v=video4",
-        // Add more YouTube video links as needed
+       
       ]
     },
     3: {
@@ -180,6 +180,7 @@ function Content() {
       youtubeLinks: [
         "https://www.youtube.com/watch?v=video5",
         "https://www.youtube.com/watch?v=video6",
+        "https://www.youtube.com/watch?v=video5"
         // Add more YouTube video links as needed
       ]
     },
@@ -359,16 +360,20 @@ function Content() {
  
   const youtubeLinksElements = youtubeLinks.map((link, index) => (
     <div key={index} className='yt-link'>
-    <a className='yt-title' href={link} target="_blank" rel="noopener noreferrer"> Lecture {index + 1}</a> 
+    <a className='yt-title' href={link} target="_blank" rel="noopener noreferrer"> <Lottie animationData={ytLogo} id='ytlogo'/> Collection {index + 1}</a> 
     </div>
   ));
 
   return (
-    <div>
-      <h1 className='headcontent'>Assignments</h1>
+    <div id='inside'>
+      <h1 className='headcontent'>Previous Year Papers</h1>
+      <div id="pyq">
     {pdfIframe}
-    <h1 className='headcontent'>Video Lectures</h1> <img src="ytlogo.png" alt=""/>
+    </div>
+    <h1 className='headcontent'>Video Lectures</h1>
+    <div id="video-cont">
     {youtubeLinksElements}
+    </div>
   </div>
   );
 }
