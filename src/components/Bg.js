@@ -21,17 +21,17 @@ const InteractiveComponent = () => {
 
         window.addEventListener('mousemove', handleMouseMove);
 
-        move(); // Start animation loop
+        move(); 
 
         return () => {
-            // Clean up event listener
+            
             window.removeEventListener('mousemove', handleMouseMove);
         };
     }, [tgX, tgY]);
 
     return (
         <div className="interactive" style={{ transform: `translate(${Math.round(curX)}px, ${Math.round(curY)}px)` }}>
-            {/* Your interactive content goes here */}
+            
         </div>
     );
 };
