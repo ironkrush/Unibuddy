@@ -4,7 +4,7 @@ import Lottie from 'lottie-react';
 import ytLogo from '../assets/ytlogo.json';
 import { getDocument, GlobalWorkerOptions } from 'pdfjs-dist/build/pdf';
 
-GlobalWorkerOptions.workerSrc = './node_modules/pdfjs-dist/build/pdf.worker.min.js';
+GlobalWorkerOptions.workerSrc = '../../node_modules/pdfjs-dist/build/pdf.worker.min.js';
 
 
 

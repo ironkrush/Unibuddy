@@ -109,9 +109,9 @@ function Footer() {
             <div className="social">
               <a href="https://www.instagram.com/the_company_inffy/" target="_blank" className="link"><img
                 src="insta.png" style={{ height: '2vw', width: '2vw' }} alt="" /></a>
-              <a href="https://twitter.com/juxtopposed" target="_blank" className="link"><img
+              <a href="https://twitter.com/inffycompany" target="_blank" className="link"><img
                 src="https://assets.codepen.io/9051928/x.png" alt="" /></a>
-              <a href="https://youtube.com/@juxtopposed" target="_blank" className="link"><img
+              <a href="mailto:inffycompany@gmail.com" target="_blank" className="link"><img
                 src="email.png" style={{ height: '4vw', width: '4vw' }} /></a>
             </div>
             <p style={{ color: '#818181', fontSize: 'smaller' }}>2024 © All Rights Reserved</p>
