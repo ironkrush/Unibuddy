@@ -5,10 +5,9 @@ import { useGSAP } from '@gsap/react';
 import { easeInOut } from 'framer-motion';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import Lottie from 'lottie-react';
-import reactLogo from '../assets/react-logo.json';
 import upArrow from '../assets/uparrow.json'
 import downArrow from '../assets/downarrow.json'
-import Lappy from '../assets/lappy.json'
+
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -152,8 +151,6 @@ function Dial() {
                         <Lottie animationData={downArrow}/>
                         </div>
                     </div>
-                    <Lottie className='reactLogo' animationData={reactLogo} />
-                    <Lottie className='lappyLogo' animationData={Lappy} />
                 </div>
             </div>
         </>
