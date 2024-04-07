@@ -7,7 +7,7 @@ function Content() {
   // Retrieve subjectId from URL parameters
 
   let { id } = useParams();
-
+// inorder to remove toolbar use the code #toolbar=0 behind every pdf path 
 
 
   const subjectData = {
