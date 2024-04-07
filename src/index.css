@@ -27,6 +27,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
 }
 
 #loader {
@@ -172,6 +177,8 @@ body {
   filter: url(#goo) blur(40px);
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
 }
 
 .g1,
@@ -239,8 +246,9 @@ body {
 .interactive {
   width: 100%;
   height: 100%;
-  top: -140%;
+  top: -50%;
   left: -50%;
+  position: absolute;
   opacity: 0.7;
   background: radial-gradient(circle at center, rgba(var(--color-interactive), 0.8) 0, rgba(var(--color-interactive), 0) 50%) no-repeat;
 }
@@ -1473,7 +1481,7 @@ a {
 #inside {
   padding: 5vh;
   width: 100vw;
-  min-height: 100%;
+  min-height: 100vh;
   background-color: #303030;
 }
 

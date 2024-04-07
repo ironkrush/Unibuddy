@@ -69,9 +69,10 @@ function Content() {
     4: {
       pdfLink: "",
       youtubeLinks: [
-        "https://www.youtube.com/watch?v=video5",
-        "https://www.youtube.com/watch?v=video6",
-       
+        "https://www.youtube.com/playlist?list=PLDN15nk5uLiC9wFOTiDp8ekWAf40BwSct",
+        "https://www.youtube.com/playlist?list=PLDN15nk5uLiBpnIOK5r3KXdfFOVzGHJSt",
+        "https://www.youtube.com/playlist?list=PLDN15nk5uLiBVR22X01vcnvVCuQIklXGx",
+        "https://www.youtube.com/playlist?list=PLDN15nk5uLiCha1twnQDker0lDD8AfONO"   
       ]
     },
     5: {
