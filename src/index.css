@@ -554,8 +554,8 @@ h1 {
   transform: scale(2);
   position: absolute;
   z-index: 1;
-  width: 1000px;
-  height: 1000px;
+  width: 100vw;
+  height: 100vh;
   background-color: transparent;
 }
 
@@ -566,8 +566,8 @@ h1 {
   transform: scale(2);
   position: absolute;
   z-index: 1;
-  width: 1000px;
-  height: 1000px;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* subject cards start here  */
