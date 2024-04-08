@@ -81,23 +81,19 @@ function Content() {
       ]
     },
     5: {
-      pdfLink: "/Papers/Sem1Fop.pdf#toolbar=0",
+      pdfLink: "/Papers/Sem1Physics.pdf#toolbar=0",
       youtubeLinks: [
-        "https://www.youtube.com/watch?v=video5",
-        "https://www.youtube.com/watch?v=video6",
 
       ]
     },
     6: {
       pdfLink: "/Papers/Sem1Es.pdf#toolbar=0",
       youtubeLinks: [
-        "https://www.youtube.com/watch?v=video5",
-        "https://www.youtube.com/watch?v=video6",
 
       ]
     },
     7: {
-      pdfLink: "",
+      pdfLink: "/Papers/Sem2Maths.pdf#toolbar=0",
       youtubeLinks: [
         "https://youtube.com/playlist?list=PLvDFTOvV1taqemRwqZKY2jmNV4RDRBNXy&si=YA9f75AAq7DjPBpT",
         "https://www.youtube.com/watch?v=1XlT3Y2oyAU&list=PLU6SqdYcYsfJOGZdxUpDk3w9o-w94-RoG",
@@ -108,7 +104,7 @@ function Content() {
       ]
     },
     8: {
-      pdfLink: "",
+      pdfLink: "/Papers/Sem2Beee.pdf#toolbar=0",
       youtubeLinks: [
         "https://www.youtube.com/watch?v=video5",
         "https://www.youtube.com/watch?v=video6",
@@ -116,7 +112,7 @@ function Content() {
       ]
     },
     9: {
-      pdfLink: "",
+      pdfLink: "/Papers/Sem2Fme.pdf#toolbar=0",
       youtubeLinks: [
         "https://www.youtube.com/watch?v=video5",
         "https://www.youtube.com/watch?v=video6",
@@ -124,7 +120,7 @@ function Content() {
       ]
     },
     10: {
-      pdfLink: "",
+      pdfLink: "/Papers/Sem2Bcps.pdf#toolbar=0",
       youtubeLinks: [
         "https://www.youtube.com/watch?v=video5",
         "https://www.youtube.com/watch?v=video6",
@@ -132,7 +128,7 @@ function Content() {
       ]
     },
     11: {
-      pdfLink: "",
+      pdfLink: "/Papers/Sem2Iict.pdf#toolbar=0",
       youtubeLinks: [
         "https://www.youtube.com/watch?v=video5",
         "https://www.youtube.com/watch?v=video6",
@@ -140,7 +136,7 @@ function Content() {
       ]
     },
     12: {
-      pdfLink: "",
+      pdfLink: "/Papers/Sem2Oopc.pdf#toolbar=0",
       youtubeLinks: [
         "https://www.youtube.com/watch?v=video5",
         "https://www.youtube.com/watch?v=video6",
@@ -367,8 +363,8 @@ function Content() {
     <iframe
     className='pdf'
     src={pdfLink}
-      width="80%"
-      height="400px"
+      width="80vw"
+      height="80vh"
       allowFullScreen
       title="PDF Viewer"
     ></iframe>

@@ -17,7 +17,7 @@ function FirstSem() {
       <Link to={`/firstsem/2`} >   <SubjectCard2 subjectName={"FUNDAMENTAL OF PROGRAMMING"} /></Link> 
       <Link to={`/firstsem/3`} >    <SubjectCard3 subjectName={"ELEMENTS OF CIVIL ENGINEERING"} /></Link> 
       <Link to={`/firstsem/4`} >   <SubjectCard4 subjectName={"ENGINEERING GRAPHICS"} /></Link> 
-      <Link to={`/firstsem/5`} >    <SubjectCard5 subjectName={"FUNDAMENTAL OF PROGRAMMING"} /></Link> 
+      <Link to={`/firstsem/5`} >    <SubjectCard5 subjectName={"Engineering Physics"} /></Link> 
       <Link to={`/firstsem/6`} >    <SubjectCard6 subjectName={"Enviromental Science"} /></Link> 
         </div>
       </div>     

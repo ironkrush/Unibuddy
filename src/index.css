@@ -68,7 +68,7 @@ body {
 
 .word {
   color: black;
-  font-size: clamp(4rem, 9vw, 12rem);
+  font-size: clamp(2rem, 9vw, 12rem);
   font-family: "Rubik", sans-serif;
   margin: 0rem;
   text-transform: uppercase;
@@ -338,24 +338,6 @@ body {
   position: relative;
 }
 
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
 #circle {
   display: flex;
   justify-content: center;
@@ -444,12 +426,12 @@ body {
 }
 
 h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .dial-link {
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-weight: 800;
@@ -1212,7 +1194,7 @@ h1 {
 
 .sem {
   min-height: 100vh;
-  background: #303030;
+  background: #1B1A22;
   top: 0%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 5vh;
@@ -1461,28 +1443,11 @@ a {
   }
 }
 
-@media screen and (max-width: 1000px) {
-  :root {
-    --m: 3rem;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  footer {
-    flex-direction: column;
-    padding: 5rem 20vw;
-  }
-
-  .col {
-    width: 100%;
-  }
-}
-
 #inside {
   padding: 5vh;
   width: 100vw;
   min-height: 100vh;
-  background-color: #303030;
+  background-color: #1B1A22;
 }
 
 .headcontent {
@@ -1540,4 +1505,62 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  :root {
+    --m: 3rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  footer {
+    flex-direction: column;
+    padding: 5rem 20vw;
+  }
+
+  .col {
+    width: 100%;
+  }
+}
+
+@media (max-width:600px) {
+  #involve {
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    font-size: 1rem;
+    letter-spacing: 0vh;
+  }
+
+  #fixed-image {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media (max-width:800px) {
+  .subject-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vh;
+  }
+
+  .headcontent {
+    font-size: 1rem;
+    letter-spacing: 0vh;
+  }
+}
+
+@media (max-width:500px) {
+  .subject-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1vh;
+  }
+}
+
+@media (max-width:700px) {
+  .sem .sem-content h3 {
+    font-size: 1rem !important;
+  }
 }
