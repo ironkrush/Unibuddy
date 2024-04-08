@@ -1,12 +1,50 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Lottie from 'lottie-react';
-import ytLogo from '../assets/ytlogo.json'
+import ytLogo from '../assets/ytlogo.json';
 
 function Content() {
-  // Retrieve subjectId from URL parameters
+  const { id } = useParams();
+  const [pdfLoaded, setPdfLoaded] = useState(false);
+  const [youtubeLoaded, setYoutubeLoaded] = useState(false);
+  const pdfRef = useRef(null);
+  const youtubeRef = useRef(null);
 
-  let { id } = useParams();
+  useEffect(() => {
+    const pdfObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setPdfLoaded(true);
+          pdfObserver.unobserve(entry.target);
+        }
+      });
+    });
+
+    const youtubeObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setYoutubeLoaded(true);
+          youtubeObserver.unobserve(entry.target);
+        }
+      });
+    });
+
+    if (pdfRef.current) {
+      pdfObserver.observe(pdfRef.current);
+    }
+    if (youtubeRef.current) {
+      youtubeObserver.observe(youtubeRef.current);
+    }
+
+    return () => {
+      if (pdfRef.current) {
+        pdfObserver.unobserve(pdfRef.current);
+      }
+      if (youtubeRef.current) {
+        youtubeObserver.unobserve(youtubeRef.current);
+      }
+    };
+  }, []);
 // inorder to remove toolbar use the code #toolbar=0 behind every pdf path 
 
 
@@ -325,7 +363,7 @@ function Content() {
   };
   const { pdfLink, youtubeLinks } = subjectData[id] || {};
 
-  const pdfIframe = pdfLink && (
+  const pdfIframe =pdfLoaded && pdfLink && (
     <iframe
     className='pdf'
     src={pdfLink}
@@ -336,7 +374,7 @@ function Content() {
     ></iframe>
   );
 
-  const youtubeLinksElements =youtubeLinks && youtubeLinks.map((link, index) => (
+  const youtubeLinksElements = youtubeLoaded && youtubeLinks && youtubeLinks.map((link, index) => (
     <div key={index} className='yt-link'>
       <a className='yt-title' href={link} target="_blank" rel="noopener noreferrer"> <Lottie animationData={ytLogo} id='ytlogo' /> Collection {index + 1}</a>
     </div>
@@ -347,12 +385,12 @@ function Content() {
     
       <div id='inside'>
       <h1 className="headcontent">Previous Year Papers</h1>
-        <div id="pyq">
+        <div id="pyq" ref={pdfRef}>
           {pdfIframe}
           
         </div>
         <h1 className='headcontent'>Video Lectures</h1>
-        <div id="video-cont">
+        <div id="video-cont" ref={youtubeRef}>
           {youtubeLinksElements}
         </div>
       </div>

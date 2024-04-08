@@ -75,7 +75,7 @@ function Footer() {
         <div className="card"> <div className="gamete"></div>
           <h1 id="involve">PEOPLE WHO INVOLVED</h1>
           <div id="elem-container">
-            <div className="elem" id="pic1" data-image="megh.png">
+            <div className="elem" id="pic1" data-image="megh.webp">
               <div className="overlay"></div>
               <div className="emojis">
                 <div className="surname">
@@ -84,7 +84,7 @@ function Footer() {
                 
               </div>
             </div>
-            <div className="elem" id="pic2" data-image="AGNIVESH.jpg">
+            <div className="elem" id="pic2" data-image="AGNIVESH.webp">
               <div className="overlay"></div>
               <div className="emojis">
               <div className="surname">
@@ -92,7 +92,7 @@ function Footer() {
                 <h1>🔥</h1>
               </div>
             </div>
-            <div className="elem" id="pic3" data-image="om.jpg">
+            <div className="elem" id="pic3" data-image="om.webp">
               <div className="overlay"></div>
               <div className="emojis">
               <div className="surname">
