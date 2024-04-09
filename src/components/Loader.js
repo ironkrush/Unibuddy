@@ -22,7 +22,7 @@ function Loader() {
                 <span key={index} style={{ transform: `rotate(${index * 16.5}deg)` }}>{char}</span>
             ))}</p>
                 </div>
-                <div id="prep"><img id='loadhead' src="prepzillalogo.png" alt="" /></div>
+                <div id="prep"><img id='loadhead' src="prepzillalogo.png" alt="logo" /></div>
             </div>
         </div>
         </div>

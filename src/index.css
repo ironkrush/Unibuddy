@@ -59,6 +59,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 10;
 }
 
 .line {
@@ -179,6 +180,7 @@ body {
   height: 100%;
   position: absolute;
   top: 0;
+  z-index: 9;
 }
 
 .g1,
@@ -480,7 +482,7 @@ h1 {
   place-items: center;
   display: grid;
   background-color: #FAF8F3;
-  z-index: 10000 !important;
+  z-index: 10010 !important;
 }
 
 #mainload {

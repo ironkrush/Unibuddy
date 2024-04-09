@@ -108,11 +108,11 @@ function Footer() {
             <p id="text">Made with <span style={{ color: '#BA6573' }}>❤<br /></span>Under The Management OF INFFY</p>
             <div className="social">
               <a href="https://www.instagram.com/the_company_inffy/" target="_blank" className="link"><img
-                src="insta.png" style={{ height: '2vw', width: '2vw' }} alt="" /></a>
+                src="insta.png" style={{ height: '2vw', width: '2vw' }} alt="instagram" /></a>
               <a href="https://twitter.com/inffycompany" target="_blank" className="link"><img
-                src="https://assets.codepen.io/9051928/x.png" alt="" /></a>
+                src="https://assets.codepen.io/9051928/x.png" alt="twitter" /></a>
               <a href="mailto:inffycompany@gmail.com" target="_blank" className="link"><img
-                src="email.png" style={{ height: '4vw', width: '4vw' }} /></a>
+                src="email.png" style={{ height: '4vw', width: '4vw' }} alt='email' /></a>
             </div>
             <p style={{ color: '#818181', fontSize: 'smaller' }}>2024 © All Rights Reserved</p>
           </div>
