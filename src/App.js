@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 800);
+      setIsMobile(window.innerWidth < 900);
     };
 
     window.addEventListener('resize', handleResize);
@@ -34,8 +34,12 @@ function App() {
               <div className="ag-robot_platform">
                 <div className="ag-robot"></div>
               </div>
-
-              <div className="ag-planet"></div>
+              <div className="botcard">
+                <div className="botcard-info">
+                  <p className="bottitle">Magic Card</p>
+                </div>
+              </div>
+              <div className="botag-planet"></div>
             </div>
           </div>
         </div>
