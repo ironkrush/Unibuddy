@@ -34,12 +34,14 @@ function App() {
               <div className="ag-robot_platform">
                 <div className="ag-robot"></div>
               </div>
+              <div id="parentofcard">
               <div className="botcard">
                 <div className="botcard-info">
-                  <p className="bottitle">Magic Card</p>
+                  <p className="bottitle">Please visit our website in your Computer</p>
                 </div>
               </div>
-              <div className="botag-planet"></div>
+              </div>
+              <div className="ag-planet"></div>
             </div>
           </div>
         </div>
