@@ -13,10 +13,10 @@ function FirstSem() {
       <div className="sem-content">
         <h3>First Sem Subjects</h3>
         <div className="subject-cards">
-      <Link to={`/firstsem/1`} > <SubjectCard1 subjectName={"ENGINEERING MATHEMATICS - I"} /></Link>
-      <Link to={`/firstsem/2`} >   <SubjectCard2 subjectName={"FUNDAMENTAL OF PROGRAMMING"} /></Link> 
-      <Link to={`/firstsem/3`} >    <SubjectCard3 subjectName={"ELEMENTS OF CIVIL ENGINEERING"} /></Link> 
-      <Link to={`/firstsem/4`} >   <SubjectCard4 subjectName={"ENGINEERING GRAPHICS"} /></Link> 
+      <Link to={`/firstsem/1`} > <SubjectCard1 subjectName={"Engineering Mathematics - I"} /></Link>
+      <Link to={`/firstsem/2`} >   <SubjectCard2 subjectName={"Fundamentals OF Programming"} /></Link> 
+      <Link to={`/firstsem/3`} >    <SubjectCard3 subjectName={"Elements OF Civil Engineering"} /></Link> 
+      <Link to={`/firstsem/4`} >   <SubjectCard4 subjectName={"Engineering Graphics"} /></Link> 
       <Link to={`/firstsem/5`} >    <SubjectCard5 subjectName={"Engineering Physics"} /></Link> 
       <Link to={`/firstsem/6`} >    <SubjectCard6 subjectName={"Enviromental Science"} /></Link> 
         </div>
