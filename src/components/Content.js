@@ -58,16 +58,14 @@ function Content() {
     2: {
       pdfLink: "/Papers/Sem1Fop.pdf#toolbar=0",
       youtubeLinks: [
-        "https://www.youtube.com/watch?v=video3",
-        "https://www.youtube.com/watch?v=video4",
+        "https://youtube.com/playlist?list=PLqleLpAMfxGBn9v-K17ztBfNXHzPnX5sN&si=5h-wb10gXyoRkYMC"
 
       ]
     },
     3: {
       pdfLink: "/Papers/Sem1Civil.pdf#toolbar=0",
       youtubeLinks: [
-        "https://www.youtube.com/watch?v=video5",
-        "https://www.youtube.com/watch?v=video6",
+        "https://youtube.com/playlist?list=PLFmmR9yqCQMgpQz5ZBbWys84Ch5nbiWWJ&si=f2eHygYhv1p3_IWo"
 
       ]
     },
@@ -89,7 +87,7 @@ function Content() {
     6: {
       pdfLink: "/Papers/Sem1Es.pdf#toolbar=0",
       youtubeLinks: [
-
+        "https://youtube.com/playlist?list=PLL7liBDYa4YaJ538RmxMWJnZYrKX9Tbi8&si=69ETB0cpa0rJbVPP"
       ]
     },
     7: {
@@ -106,40 +104,32 @@ function Content() {
     8: {
       pdfLink: "/Papers/Sem2Beee.pdf#toolbar=0",
       youtubeLinks: [
-        "https://www.youtube.com/watch?v=video5",
-        "https://www.youtube.com/watch?v=video6",
+        "https://youtube.com/playlist?list=PL9RcWoqXmzaLTYUdnzKhF4bYug3GjGcEc&si=naHYnJ-8NiMltrH4"
 
       ]
     },
     9: {
       pdfLink: "/Papers/Sem2Fme.pdf#toolbar=0",
       youtubeLinks: [
-        "https://www.youtube.com/watch?v=video5",
-        "https://www.youtube.com/watch?v=video6",
+        "https://youtube.com/playlist?list=PL3qvHcrYGy1vwJlwY2uLfEzqr3vM0Ye-O&si=rio4kjVdKcgAH1ld"
 
       ]
     },
     10: {
       pdfLink: "/Papers/Sem2Bcps.pdf#toolbar=0",
       youtubeLinks: [
-        "https://www.youtube.com/watch?v=video5",
-        "https://www.youtube.com/watch?v=video6",
 
       ]
     },
     11: {
       pdfLink: "/Papers/Sem2Iict.pdf#toolbar=0",
       youtubeLinks: [
-        "https://www.youtube.com/watch?v=video5",
-        "https://www.youtube.com/watch?v=video6",
-
       ]
     },
     12: {
       pdfLink: "/Papers/Sem2Oopc.pdf#toolbar=0",
       youtubeLinks: [
-        "https://www.youtube.com/watch?v=video5",
-        "https://www.youtube.com/watch?v=video6",
+        "https://youtube.com/playlist?list=PLISTUNloqsz0z9JJJke7g7PxRLvy6How9&si=LD4kgD6R3ZxYkeLR"
 
       ]
     },
@@ -244,17 +234,12 @@ function Content() {
     27: {
       pdfLink: "",
       youtubeLinks: [
-        "https://www.youtube.com/watch?v=video5",
-        "https://www.youtube.com/watch?v=video6",
 
       ]
     },
     28: {
       pdfLink: "",
       youtubeLinks: [
-        "https://www.youtube.com/watch?v=video5",
-        "https://www.youtube.com/watch?v=video6",
-
       ]
     },
     29: {
@@ -287,17 +272,11 @@ function Content() {
     33: {
       pdfLink: "",
       youtubeLinks: [
-        "https://www.youtube.com/watch?v=video5",
-        "https://www.youtube.com/watch?v=video6",
-
       ]
     },
     34: {
       pdfLink: "",
       youtubeLinks: [
-        "https://www.youtube.com/watch?v=video5",
-        "https://www.youtube.com/watch?v=video6",
-
       ]
     },
     35: {
@@ -317,17 +296,11 @@ function Content() {
     37: {
       pdfLink: "",
       youtubeLinks: [
-        "https://www.youtube.com/watch?v=video5",
-        "https://www.youtube.com/watch?v=video6",
-
       ]
     },
     38: {
       pdfLink: "",
       youtubeLinks: [
-        "https://www.youtube.com/watch?v=video5",
-        "https://www.youtube.com/watch?v=video6",
-
       ]
     },
     39: {
@@ -345,15 +318,11 @@ function Content() {
     41: {
       pdfLink: "",
       youtubeLinks: [
-        "https://www.youtube.com/watch?v=video5",
-        "https://www.youtube.com/watch?v=video6",
       ]
     },
     42: {
       pdfLink: "",
       youtubeLinks: [
-        "https://www.youtube.com/watch?v=video5",
-        "https://www.youtube.com/watch?v=video6",
       ]
     },
   };

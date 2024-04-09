@@ -1189,6 +1189,7 @@ h1 {
   font-size: 2vw;
   display: flex;
   justify-content: center;
+  text-transform: capitalize;
   margin: 4vh;
   border-bottom: 2px solid #fff;
   padding-bottom: 2vh;
