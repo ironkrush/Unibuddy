@@ -29,13 +29,13 @@ function App() {
     return (
       <>
         <div>
-          <div class="ag-space">
-            <div class="ag-format-container">
-              <div class="ag-robot_platform">
-                <div class="ag-robot"></div>
+          <div className="ag-space">
+            <div className="ag-format-container">
+              <div className="ag-robot_platform">
+                <div className="ag-robot"></div>
               </div>
 
-              <div class="ag-planet"></div>
+              <div className="ag-planet"></div>
             </div>
           </div>
         </div>

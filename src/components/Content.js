@@ -367,7 +367,6 @@ function Content() {
       height="80vh"
       allowFullScreen
       title="PDF Viewer"
-      sandbox="allow-scripts allow-same-origin"
     ></iframe>
   );
 
