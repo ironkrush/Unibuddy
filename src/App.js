@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import FirstSem from './pages/FirstSem';
@@ -12,10 +12,40 @@ import EightSem from './pages/EightSem';
 import Content from './components/Content';
 
 function App() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 700);
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  if (isMobile) {
+    return (
+      <>
+        <div>
+          <div class="ag-space">
+            <div class="ag-format-container">
+              <div class="ag-robot_platform">
+                <div class="ag-robot"></div>
+              </div>
+
+              <div class="ag-planet"></div>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
+
   return (
-    <>
     <Router>
-      <Routes> 
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/firstsem" element={<FirstSem />} />
         <Route path="/secondsem" element={<SecondSem />} />
@@ -35,8 +65,6 @@ function App() {
         <Route path="/eightsem/:id" element={<Content />} />
       </Routes>
     </Router>
-    
-     </>
   );
 }
 
