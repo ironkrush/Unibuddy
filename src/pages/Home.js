@@ -7,6 +7,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 import { easeInOut } from 'framer-motion';
 import Loader from '../components/Loader';
 import Footer from '../components/Footer';
+import { Analytics } from "@vercel/analytics/react"
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -88,7 +89,7 @@ function Home() {
           <div className="g5"></div>
           <div className="interactive"></div>
         </div>
-
+        <Analytics />
         <div className="home">
           <div className="text">
             <div className="line">
