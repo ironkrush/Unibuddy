@@ -8,6 +8,7 @@ import { easeInOut } from 'framer-motion';
 import Loader from '../components/Loader';
 import Footer from '../components/Footer';
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -90,6 +91,7 @@ function Home() {
           <div className="interactive"></div>
         </div>
         <Analytics />
+        <SpeedInsights />
         <div className="home">
           <div className="text">
             <div className="line">
