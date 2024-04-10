@@ -157,7 +157,7 @@ function Content() {
       ]
     },
     16: {
-      pdfLink: "/Papers/Sem3itw.pdf#toolbar=0",
+      pdfLink: "/Papers/Sem3Itw.pdf#toolbar=0",
       youtubeLinks: [
         "https://youtube.com/playlist?list=PLo6pcfMH2eBr4rB1ztAFwoqBwFGbqoB-f&si=g5N4BUqplCkW_xRn",
         "https://youtube.com/playlist?list=PLo6pcfMH2eBrPql0h-h-sWR4DkrEHGa4e&si=o1yn1O86sUy_6u0d",
