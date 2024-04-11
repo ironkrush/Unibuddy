@@ -45,7 +45,8 @@ function Content() {
       }
     };
   }, []);
-// inorder to remove toolbar use the code #toolbar=0 behind every pdf path 
+
+// inorder to remove toolbar use the code #toolbar=0 behind every pdf path - krushil patel
 
 
   const subjectData = {
