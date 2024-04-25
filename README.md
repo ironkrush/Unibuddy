@@ -1,6 +1,6 @@
 Prepzilla
 
-** conquer. your. exams. **
+## conquer. your. exams. 
 
 Tired of juggling past papers, video lectures, and assignments?
 
