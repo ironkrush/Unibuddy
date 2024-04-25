@@ -24,4 +24,4 @@ Imagine a world where exam preparation feels less like a stressful labyrinth  an
 
 Embark on Your Quest!
 
-Prepzilla: [https://vercel.com/guides/deploying-preact-with-vercel](https://prepzilla.vercel.app/) awaits, ready to unleash your academic potential. Start your journey today and witness the magic of streamlined exam preparation unfold! ✨
+Prepzilla: [click here](https://prepzilla.vercel.app/) awaits, ready to unleash your academic potential. Start your journey today and witness the magic of streamlined exam preparation unfold! ✨
