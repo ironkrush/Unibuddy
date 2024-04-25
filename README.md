@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+Prepzilla: Your College Exam Prep Oasis
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Effortlessly Ace Your Exams with Comprehensive Resources
 
-## Available Scripts
+Welcome to Prepzilla, your one-stop shop for conquering college exams! No more frantic searches for past papers, elusive video lectures, or scattered assignments. Prepzilla streamlines your study journey by bringing everything together in a user-friendly, organized platform.
 
-In the project directory, you can run:
+Built with Modern Prowess
 
-### `npm start`
+React JS: Our interactive interface fosters a seamless user experience, allowing you to navigate resources with ease.
+JavaScript: The heart of our application, powering interactive elements and dynamic responses.
+GSAP: Experience the joy of smooth animations and transitions, making studying a visually engaging adventure.
+Modern CSS: We leverage the latest CSS techniques to deliver a clean, sleek, and visually appealing design.
+Unveiling a Treasure Chest of Learning Materials
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Past Year Papers: Gain valuable insights into exam patterns and develop masterful problem-solving skills.
+Video Lectures: Immerse yourself in engaging and informative video lectures delivered by expert instructors.
+Assignments: Refine your understanding by tackling well-crafted assignments and practice tests.
+A Tale of Efficiency and Triumph
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Imagine a world where exam preparation feels more like a captivating treasure hunt than a stressful battlefield. Prepzilla equips you to confidently navigate the academic landscape. Discover hidden gems of knowledge, unearth forgotten concepts, and ultimately conquer your exams with resounding success.
 
-### `npm test`
+Embark on Your Study Quest
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Visit Prepzilla at prepzilla.vercel.app and witness the magic of streamlined exam preparation unfold!
